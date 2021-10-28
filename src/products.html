@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>products</title>
+  <script src="products.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="backslash.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>backslash</h1>
+  <p>products</p>
+  <p>Click the button to display random pictures</p>
+<button onclick="randomizeImages2()">randomize</button>
+
+<div class="flex-container">
+  <div><img src="cmichImage1.png"></div>
+  <div><img src="cmichImage2.png"></div>
+  <div><img src="cmichImage3.png"></div>  
+  <div><img src="cmichImage4.png"></div>
+  <div><img src="cmichImage5.png"></div>
+  <div><img src="cmichImage6.png"></div>  
+  <div><img src="cmichImage7.png"></div>
+  <div><img src="cmichImage8.png"></div>
+  <div><img src="cmichImage9.png"></div>
+  </div>
+
+  <script>
+function randomizeImages() {
+var filename="cmichImage";
+    var images = document.getElementsByTagName("img");
+	for (n=0; n<9; ++n)
+	{
+	  var x = Math.floor((Math.random() * 9) + 1);
+	   filename="cmichImage"+(x)+".png";
+	   images[n].setAttribute("src",filename);     
+    }
+}
+</script>
+
+</body>
+
+<footer>
+<ul>
+  <li><a href="index.html">Home Page</a></li>
+  <li><a href="inventory.html">inventory</a></li>
+  </ul>
+
+</footer>
+
+</html>
